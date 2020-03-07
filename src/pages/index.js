@@ -1,5 +1,10 @@
-import React from "react"
+import React from 'react';
+import BlogLayout from '../components/BlogLayout';
 
-const IndexPage = () => <p>Hello World</p>
+const IndexPage = () => (
+	<BlogLayout>
 
-export default IndexPage
+	</BlogLayout>
+);
+
+export default IndexPage;

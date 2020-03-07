@@ -1,4 +1,10 @@
 .cache
+.vscode
+.idea
+.devcontainer
 package.json
 package-lock.json
 public
+node_modules
+
+*.iml

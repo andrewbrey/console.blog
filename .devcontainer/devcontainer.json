@@ -7,16 +7,12 @@
   "postCreateCommand": "sudo chown node:node node_modules && touch node_modules/.gitkeep",
   "runArgs": [],
   "extensions": [
-    "dsznajder.es7-react-js-snippets",
     "bradlc.vscode-tailwindcss",
     "editorconfig.editorconfig",
     "esbenp.prettier-vscode",
     "gruntfuggly.todo-tree",
-    "ms-vscode.vscode-typescript-tslint-plugin",
 		"naumovs.color-highlight",
-		"joelday.docthis",
 		"luxcium.pop-n-lock-theme-vscode",
-		"ahmadawais.shades-of-purple"
   ],
   "settings": {
     /********************
