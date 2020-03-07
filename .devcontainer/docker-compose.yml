@@ -1,0 +1,19 @@
+version: "2.4"
+
+volumes:
+  ab-blog-node_modules:
+
+services:
+  ab-blog:
+    container_name: ab-blog
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ..:/workspace
+      - ab-blog-node_modules:/workspace/node_modules
+    ports:
+      - "8000:8000"
+    user: node
+    # Overrides default command so things don't shut down after the process ends.
+    command: /bin/sh -c "while sleep 60000; do :; done"
