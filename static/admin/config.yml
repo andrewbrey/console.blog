@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
 
+publish_mode: editorial_workflow
 local_backend: false
 
 media_folder: content/assets/uploads
