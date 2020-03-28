@@ -1,0 +1,225 @@
+/* purgecss start ignore */
+.markdown {
+	& a,
+	& strong,
+	& :not(pre) > code[class*='language-'] {
+		word-wrap: break-word;
+		word-break: break-word;
+	}
+
+	& > * + * {
+		@apply mt-0 mb-4;
+	}
+
+	& li + li {
+		@apply mt-1;
+	}
+
+	& li > p + p {
+		@apply mt-6;
+	}
+
+	& p > img {
+		@apply block mx-auto max-w-full object-contain py-6;
+	}
+
+	& strong,
+	& strong a {
+		@apply font-bold;
+	}
+
+	& a {
+		@apply font-bold;
+	}
+
+	& h1 {
+		@apply leading-tight border-b text-4xl font-bold mb-4 mt-6 pb-2;
+	}
+
+	& h2 {
+		@apply leading-tight border-b text-2xl font-bold mb-4 mt-6 pb-2;
+	}
+
+	& h3 {
+		@apply leading-snug text-lg font-bold mb-4 mt-6;
+	}
+
+	& h4 {
+		@apply leading-none text-base font-bold mb-4 mt-6;
+	}
+
+	& h5 {
+		@apply leading-tight text-sm font-bold mb-4 mt-6;
+	}
+
+	& h6 {
+		@apply leading-tight text-sm font-bold mb-4 mt-6;
+	}
+
+	& blockquote {
+		@apply text-base border-l-4 pl-4 pr-4;
+	}
+
+	& code {
+		@apply font-mono text-sm inline rounded px-1 py-1;
+	}
+
+	& pre {
+		@apply rounded p-4;
+	}
+
+	& pre code {
+		@apply block p-0 overflow-visible rounded-none;
+	}
+
+	& ul {
+		@apply text-base pl-8 list-disc;
+	}
+
+	& ol {
+		@apply text-base pl-8 list-decimal;
+	}
+
+	& kbd {
+		@apply text-xs inline-block rounded border px-1 py-1 align-middle font-normal font-mono shadow;
+	}
+
+	& table {
+		@apply text-base mx-auto my-6;
+	}
+
+	& th {
+		@apply border py-1 px-3;
+	}
+
+	& td {
+		@apply border py-1 px-3;
+	}
+
+	& pre[class*='language-'] {
+		@apply shadow-lg;
+	}
+
+	& pre:not(.language-text) {
+		@apply text-xs leading-none;
+	}
+
+	& code.language-text {
+		@apply text-sm tracking-wider px-1 break-words whitespace-pre-line !important;
+	}
+
+	& ul {
+		@apply list-disc;
+	}
+
+	& h3 {
+		@apply text-xl font-medium;
+	}
+
+	& blockquote {
+		@apply whitespace-normal py-2 px-4 border-l-4 rounded-r shadow !important;
+	}
+
+	& code[class*='language-'],
+	& pre[class*='language-'] {
+		@apply rounded;
+	}
+
+	/* ---------------- COLORS START ---------------- */
+
+	& h3 {
+		@apply text-indigo-500;
+	}
+
+	& h6 {
+		@apply text-smoke-600;
+	}
+
+	& strong {
+		@apply text-indigo-700;
+	}
+
+	& a {
+		@apply text-blue-600;
+	}
+
+	& a:hover,
+	& a:focus {
+		@apply text-blue-400;
+	}
+
+	& blockquote {
+		@apply text-indigo-600 border-indigo-300 bg-indigo-100 !important;
+	}
+
+	& table {
+		@apply border-smoke-600;
+	}
+
+	& pre code {
+		@apply bg-transparent;
+	}
+
+	& code[class*='language-'],
+	& pre[class*='language-'] {
+		@apply bg-indigo-900;
+	}
+
+	& code.language-text {
+		@apply bg-indigo-200 text-indigo-600 !important;
+	}
+
+	& code[class*='language-']::selection,
+	& code[class*='language-'] span::selection {
+		background: rgba(159, 122, 234, 0.2);
+	}
+
+	& code[class*='language-'] .token.comment {
+		@apply text-indigo-500;
+	}
+
+	& code[class*='language-'] .token.class-name {
+		@apply text-yellow-400;
+	}
+	/* ---------------- COLORS END ---------------- */
+}
+
+.mode-dark .markdown {
+	& strong {
+		@apply text-white;
+	}
+
+	& h3 {
+		@apply text-fluencyy-100;
+	}
+
+	& blockquote {
+		@apply text-fluencyy-700 border-fluencyy-500 bg-fluencyy-300 !important;
+	}
+
+	& code[class*='language-'],
+	& pre[class*='language-'] {
+		@apply bg-fluencyy-700;
+	}
+
+	& code.language-text {
+		@apply text-white bg-fluencyy-600 !important;
+	}
+
+	& code[class*='language-'] .token.comment {
+		@apply text-fluencyy-400;
+	}
+}
+
+@screen md {
+	.markdown {
+		& pre:not(.language-text) {
+			@apply text-sm;
+		}
+
+		& code.language-text {
+			@apply text-base;
+		}
+	}
+}
+/* purgecss end ignore */

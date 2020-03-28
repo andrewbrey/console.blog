@@ -1,0 +1,33 @@
+/* purgecss start ignore */
+@import url('https://fonts.googleapis.com/css?family=Sen:400,700&display=swap');
+@import '~prism-themes/themes/prism-material-dark.css';
+/* purgecss end ignore */
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@import url('./_markdown.css');
+
+html {
+	@apply bg-gray-50;
+}
+
+html.mode-dark {
+	@apply bg-smoke-900;
+}
+
+.blink {
+	animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+	from,
+	to {
+		color: transparent;
+	}
+	50% {
+		color: currentColor;
+	}
+}
