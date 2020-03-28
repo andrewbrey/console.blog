@@ -7,7 +7,7 @@ const BlogMetadata = ({ children, imgClasses = '', stackClasses = '', authorClas
 		query BioQuery {
 			avatar: file(absolutePath: { regex: "/author-avatar.png/" }) {
 				childImageSharp {
-					fixed(width: 70, height: 70) {
+					fixed(width: 80, height: 80) {
 						...GatsbyImageSharpFixed
 					}
 				}
@@ -24,7 +24,11 @@ const BlogMetadata = ({ children, imgClasses = '', stackClasses = '', authorClas
 
 	return (
 		<div className="flex items-center">
-			<Image className={`flex-shrink-0 ${imgClasses}`} fixed={data.avatar.childImageSharp.fixed} alt={author} />
+			<Image
+				className={`flex-shrink-0 h-20 w-20 ${imgClasses}`}
+				fixed={data.avatar.childImageSharp.fixed}
+				alt={author}
+			/>
 			<aside className={`ml-2 ${stackClasses}`}>
 				<p className={authorClasses}>{author}</p>
 				{children}

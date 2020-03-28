@@ -1,7 +1,8 @@
 backend:
   name: git-gateway
 
-local_backend: false
+# local_backend - will be set by manual bootstrap!
+# site_url - will be set by manual bootstrap!
 
 media_folder: content/assets/uploads
 public_folder: '../assets/uploads/'
@@ -13,9 +14,30 @@ collections:
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     fields:
-      - { name: title, label: Title }
-      - { name: description, label: Description }
-      - { name: date, label: Date, widget: date }
-      - { name: category, label: Category }
-      - { name: featuredImage, Label: Featured Image, widget: 'image', required: false }
-      - { name: body, label: Body, widget: markdown }
+      - name: title
+        label: Title
+        widget: string
+        required: true
+        pattern: ['.{2,50}', 'Must have between 2 and 50 characters']
+      - name: description
+        label: Description
+        widget: string
+        required: true
+        pattern: ['.{2,150}', 'Must have between 2 and 150 characters']
+      - name: date
+        label: Date
+        widget: datetime
+        required: true
+      - name: category
+        label: Category
+        widget: string
+        required: false
+        pattern: ['.{2,20}', 'Must have between 2 and 20 characters']
+      - name: featuredImage
+        label: Featured Image
+        widget: 'image'
+        required: false
+      - name: body
+        label: Body
+        widget: markdown
+        required: true
