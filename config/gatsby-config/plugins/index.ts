@@ -2,7 +2,7 @@ import { RSS_FEED } from './setup/feed.plugin';
 import { ASSETS, BLOG_CONTENT } from './setup/filesystem.plugin';
 import { GOOGLE_ANALYTICS } from './setup/google-analytics.plugin';
 import { MANIFEST } from './setup/manifest.plugin';
-import { NETLIFY } from './setup/netlify.plugin';
+import { NETLIFY, NETLIFY_CMS } from './setup/netlify.plugin';
 import { OFFLINE } from './setup/offline.plugin';
 import { POST_CSS } from './setup/postcss.plugin';
 import { REACT_HELMET } from './setup/react-helmet.plugin';
@@ -26,4 +26,5 @@ export const GATSBY_PLUGINS = [
 	NETLIFY,
 	SITE_MAP,
 	OFFLINE,
+	NETLIFY_CMS,
 ];

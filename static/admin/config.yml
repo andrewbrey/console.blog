@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+
+local_backend: false
+
+media_folder: content/assets/uploads
+public_folder: '../assets/uploads/'
+
+collections:
+  - name: blog
+    label: Blog
+    folder: content/blog
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: date, label: Date, widget: date }
+      - { name: category, label: Category }
+      - { name: featuredImage, Label: Featured Image, widget: 'image', required: false }
+      - { name: body, label: Body, widget: markdown }
