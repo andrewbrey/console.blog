@@ -18,12 +18,12 @@ collections:
         label: Title
         widget: string
         required: true
-        pattern: ['.{2,50}', 'Must have between 2 and 50 characters']
+        pattern: ['.{2,150}', 'Must have between 2 and 150 characters']
       - name: description
         label: Description
         widget: string
         required: true
-        pattern: ['.{2,150}', 'Must have between 2 and 150 characters']
+        pattern: ['.{2,250}', 'Must have between 2 and 250 characters']
       - name: date
         label: Date
         widget: datetime
@@ -32,7 +32,7 @@ collections:
         label: Category
         widget: string
         required: false
-        pattern: ['.{2,20}', 'Must have between 2 and 20 characters']
+        pattern: ['.{2,50}', 'Must have between 2 and 50 characters']
       - name: featuredImage
         label: Featured Image
         widget: 'image'
