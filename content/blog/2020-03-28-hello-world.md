@@ -1,9 +1,9 @@
 ---
 title: Hello World!
-date: '2020-03-28T06:50:23.663Z'
+date: 2020-03-28T06:50:23.663Z
 description: Every good software project begins as a Hello World
-featuredImage: featured-image.png
 category: General
+featuredImage: ../assets/uploads/blog-placeholder.png
 ---
 
 Here it is, the first post of `console.blog`! This is a bit of an experiment for me to learn about:

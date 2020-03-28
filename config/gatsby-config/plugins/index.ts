@@ -26,4 +26,5 @@ export const GATSBY_PLUGINS = [
 	NETLIFY,
 	SITE_MAP,
 	OFFLINE,
+	'gatsby-plugin-netlify-cms',
 ];
