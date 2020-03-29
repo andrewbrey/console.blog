@@ -10,7 +10,7 @@ const BlogIndex = ({ data }) => {
 	return (
 		<Layout>
 			<SEO title="All posts" />
-			<h1 className="pb-4 text-body lg:text-lg lg:block tracking-tight text-indigo-400 dark:text-fluencyy-400">
+			<h1 className="pb-4 text-body lg:text-lg lg:block tracking-tight text-indigo-400 dark:text-fluencyy-400 select-none cursor-default">
 				<span>>_ </span>
 				<span className="text-indigo-600 dark:text-fluencyy-200">{data.site.siteMetadata.description}</span>
 				<span className="blink"> |</span>
