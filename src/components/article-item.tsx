@@ -34,8 +34,15 @@ const ArticleItem = ({ title, slug, frontmatter, readingTime, excerpt }) => {
 				</div>
 				<div className="flex-1 bg-white dark:bg-fluencyy-700 p-6 flex flex-col justify-between">
 					<div className="flex-1">
-						<p className="text-sm leading-5 font-medium underline text-indigo-600 dark:text-fluencyy-200">
-							<span>{frontmatter.category ? startCase(frontmatter.category) : 'Miscellaneous'}</span>
+						<p className="text-sm leading-5 font-medium text-indigo-600 dark:text-fluencyy-200 flex justify-between">
+							<span className="underline">
+								{frontmatter.category ? startCase(frontmatter.category) : 'Miscellaneous'}
+							</span>
+							{!frontmatter.published && (
+								<span className="px-1 rounded no-underline bg-indigo-200 text-indigo-800 dark:bg-fluencyy-300 dark:text-fluencyy-800">
+									unpublished
+								</span>
+							)}
 						</p>
 						<div>
 							<h3 className="mt-2 text-2xl leading-7 font-semibold text-smoke-900 dark:text-fluencyy-300">{title}</h3>

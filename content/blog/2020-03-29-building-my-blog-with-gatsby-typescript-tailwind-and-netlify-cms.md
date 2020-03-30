@@ -3,6 +3,7 @@ title: 'Building my blog with Gatsby, TypeScript, Tailwind, and Netlify CMS'
 description: How I built a GatsbyJS + Typescript + TailwindCSS + Netlify CMS blog website
 date: 2020-03-29T00:00:44.855Z
 category: Projects
+published: true
 ---
 For the last several weeks as I've been searching for a new job I have been surprised to find that not only is `React` a whole lot hotter than `Angular` where I am in Seattle, but it's honestly not even really close. I have spent the last 2.5 years on a weird little island [doing consulting work](https://www.fluencyy.com) where I could freely pick the tech stack for client projects and I tended to err on the side of what I knew best (i.e. `Angular`) so that my time wasn't spent fiddling around with a unfamiliar technology.
 

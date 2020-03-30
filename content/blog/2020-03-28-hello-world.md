@@ -4,6 +4,7 @@ description: Every good software project begins as a Hello World
 date: 2020-03-28T06:50:23.663Z
 category: General
 featuredImage: ../assets/uploads/blog-placeholder.png
+published: true
 ---
 Here it is, the first post of `console.blog`! This is a bit of an experiment for me to learn about:
 

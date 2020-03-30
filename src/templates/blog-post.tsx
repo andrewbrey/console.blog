@@ -98,6 +98,7 @@ export const pageQuery = graphql`
 				title
 				date(formatString: "MMMM DD, YYYY")
 				description
+				published
 				featuredImage {
 					childImageSharp {
 						fixed(width: 600) {

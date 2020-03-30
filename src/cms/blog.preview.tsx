@@ -6,7 +6,7 @@ const BlogPostPreview = (props: any) => {
 	const { entry, widgetFor } = props;
 
 	const title = entry.getIn(['data', 'title']);
-	const date = entry.getIn(['data', 'date']);
+	const date = entry.getIn(['data', 'date']) || new Date();
 	const description = entry.getIn(['data', 'description']);
 	const body = widgetFor('body');
 

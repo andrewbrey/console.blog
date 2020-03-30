@@ -5,6 +5,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 const BlogIndex = ({ data }) => {
+	const IS_DEV = process.env.NODE_ENV === 'development';
 	const posts = data.allMarkdownRemark.edges;
 
 	return (
@@ -16,16 +17,18 @@ const BlogIndex = ({ data }) => {
 				<span className="blink"> |</span>
 			</h1>
 			<section className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-				{posts.map(({ node }) => (
-					<ArticleItem
-						key={node.fields.slug}
-						title={node.frontmatter.title || node.fields.slug}
-						slug={node.fields.slug}
-						readingTime={node.fields.readingTime.text}
-						excerpt={node.excerpt}
-						frontmatter={node.frontmatter}
-					/>
-				))}
+				{posts
+					.filter(({ node }: any) => IS_DEV || node.frontmatter.published)
+					.map(({ node }) => (
+						<ArticleItem
+							key={node.fields.slug}
+							title={node.frontmatter.title || node.fields.slug}
+							slug={node.fields.slug}
+							readingTime={node.fields.readingTime.text}
+							excerpt={node.excerpt}
+							frontmatter={node.frontmatter}
+						/>
+					))}
 			</section>
 		</Layout>
 	);
@@ -57,6 +60,7 @@ export const pageQuery = graphql`
 						title
 						description
 						category
+						published
 						featuredImage {
 							childImageSharp {
 								fluid(maxWidth: 500) {

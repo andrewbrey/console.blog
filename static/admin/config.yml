@@ -37,6 +37,11 @@ collections:
         label: Featured Image
         widget: 'image'
         required: false
+      - name: published
+        label: Published
+        widget: 'boolean'
+        required: true
+        default: false
       - name: body
         label: Body
         widget: markdown
