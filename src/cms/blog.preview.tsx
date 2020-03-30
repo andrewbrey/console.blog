@@ -11,7 +11,7 @@ const BlogPostPreview = (props: any) => {
 	const body = widgetFor('body');
 
 	return (
-		<article className="p-4">
+		<article className="p-4 max-w-screen-lg mx-auto">
 			<header className="flex flex-col justify-center items-start">
 				<div className="flex items-center">
 					<div className="flex-shrink-0 bg-smoke-900 w-20 h-20 rounded-full border-2 border-smoke-200">

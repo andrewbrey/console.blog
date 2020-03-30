@@ -34,24 +34,29 @@ As mentioned before, this whole project is [open source](https://github.com/andr
 
 ### Overview
 
-```javascript
-// TODO implement
-```
+There are a few bullet points outside of the project objectives that I think are worthy of mention that I'll present here in a group:
+
+- All of the content for the blog is written in **Markdown** as part of the git repository for the blog source code. The `.md` files are transformed into HTML through a series of `Gatsby` plugins, collectively found in a file called `remark.plugin.ts` which is part of the overall `Gatsby` framework configuration. As you might guess, the plugin is called `Remark` and it has several accompanying plugins that do things like extract referenced images to the `static` asset folder upon build, calculate the reading time for a post based on the number of words, and add code syntax highlighting to *code fenced* snippets.
+- If you look at the markdown stuff just mentioned, you'll see that I have all of the framework configuration in a "non-standard" location (at least as far as I've seen on other `Gatsby` blogs), namely a `config` directory. The code is also written in `TypeScript` and I leverage `ts-node` within the "normal" configuration files to allow me to import `.ts` code into the typical `.js` configs.
+- I'm using several other plugins for things like the [rss feed](https://blog.andrewbrey.com/rss.xml), the [sitemap](https://blog.andrewbrey.com/sitemap.xml), and the Netlify redirect/header/caching rules - many of these plugins require no manual configuration for my use case.
+- You'll notice that I have a `.devcontainer` directory that has some `Docker` related content inside. This is configuration that allows me to run my local development environment inside of a container and attach my (container host) instance of the **Visual Studio Code** GUI to the running container instance. I get the isolation, reproducibility, and portability of containers with the nice editor experience and tools of `vscode` - a very nice combination! If you're interested in learning more, check out the `vscode` article [on developing inside containers](https://code.visualstudio.com/docs/remote/containers).
 
 ### Using TailwindCSS
 
-```javascript
-// TODO implement
-```
+There is a `Gatsby` plugin for [TailwindCSS](https://www.gatsbyjs.org/packages/gatsby-plugin-tailwindcss/), but I opted to instead add Tailwind myself using the "preferred" installation method discussed on the Tailwind [documentation site](https://tailwindcss.com/docs/installation/#using-tailwind-with-postcss) which meant using `PostCSS`. This worked better for me as I knew I was going to be adding other `PostCSS` plugins (namely `PurgeCSS` and `Autoprefixer`) and I wanted to have as little `Gatsby` dependency as I could for this set of configurations. After adding the [PostCSS](https://www.gatsbyjs.org/packages/gatsby-plugin-postcss/) plugin, I was off to the races.
 
 ### Using TypeScript
 
-```javascript
-// TODO implement
-```
+Again, this was pretty straight forward - just install the [Gatsby TypeScript plugin](https://www.gatsbyjs.org/packages/gatsby-plugin-typescript/) and add a `ts-config.json` to the root of the project! Don't forget to also add `ts-node` as a **devDependency** in your *package.json* so that you can make use of `.ts` and `.tsx` files in your `Gatsby` configurations.
 
 ### Using Netlify and Netlify CMS
 
-```javascript
-// TODO implement
-```
+This was the goal that took the most fiddling to get working exactly right. In order to generate Netlify deployment configuration files when you run `gasby build`, you need only add the [Netlify plugin](https://www.gatsbyjs.org/packages/gatsby-plugin-netlify/) with no extra configuration, but in order to use [Netlify CMS](https://www.netlifycms.org/) (which is a **git based** static site generator CMS) I ended up having to take more manual control of the configuration than I originally wanted. To facilitate this, I grabbed the [Netlify CMS plugin](https://www.gatsbyjs.org/packages/gatsby-plugin-netlify-cms/), which generates the **admin** page on your behalf, and *critically*, has support for customizing the runtime CMS configuration within `js`/`ts` (which I have done in `src/cms/index.tsx`). This allows me to run the CMS using a local git proxy server (also a Netlify offering, see [the beta features documentation for details](https://www.netlifycms.org/docs/beta-features/)) when I'm in my local environment, and using the *real* Netlify git proxy API in production, all without maintaining local file modifications that I have to remember to stash before committing!
+
+Another thing I customized in here was the blog post *preview template* which allowed me to make the admin editing experience produce a preview that looks just like (well, very close to) the final rendered site which is very helpful!
+
+
+
+That's about it for the tour - there is more code in there but a lot of this an adaptation of the [Gatsby stater blog template](https://github.com/gatsbyjs/gatsby-starter-blog) so it should be close to familiar to anyone who has toured other `Gatsby` blog repositories - this just has a sprinkling of my personal preferences and technology choices on top!
+
+**Cheers!**

@@ -18,7 +18,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
 				description={post.frontmatter.description || post.excerpt}
 				previewImage={featuredImage}
 			/>
-			<article>
+			<article className="max-w-screen-lg mx-auto">
 				<header className="flex flex-col justify-center items-start">
 					<BlogMetadata
 						imgClasses="rounded-full border-2 border-smoke-200"

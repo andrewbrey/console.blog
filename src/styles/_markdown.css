@@ -7,8 +7,9 @@
 		word-break: break-word;
 	}
 
+	& > *,
 	& > * + * {
-		@apply mt-0 mb-4;
+		@apply mt-0 mb-6;
 	}
 
 	& li + li {
@@ -16,7 +17,7 @@
 	}
 
 	& li > p + p {
-		@apply mt-6;
+		@apply my-3;
 	}
 
 	& p > img {
