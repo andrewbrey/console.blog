@@ -11,7 +11,7 @@ export const MANIFEST = {
 		lang: 'en',
 		background_color: theme.extend.colors.smoke[900],
 		theme_color: theme.extend.colors.smoke[900],
-		display: 'minimal-ui',
+		display: 'standalone',
 		orientation: 'portrait',
 		icon: 'content/assets/author-avatar.png',
 	},
