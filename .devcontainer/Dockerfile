@@ -38,8 +38,8 @@ RUN apt-get update \
     && su -c "RUNZSH=no CHSH=no /home/node/oh-my-zsh-install.sh --unattended" - node \
     #
     # Ensure node saves exact versions
-    && su -c "npm config set save-exact true" - root \
-    && su -c "npm config set save-exact true" - node \
+    && su -c "npm config set save-exact false" - root \
+    && su -c "npm config set save-exact false" - node \
     #
     # [Optional] Update a non-root user to match UID/GID - see https://aka.ms/vscode-remote/containers/non-root-user.
     && if [ "$USER_GID" != "1000" ]; then groupmod node --gid $USER_GID; fi \

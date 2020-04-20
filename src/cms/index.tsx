@@ -6,9 +6,14 @@ const IS_DEV = process.env.NODE_ENV === 'development';
 
 CMS.registerPreviewTemplate('blog', BlogPostPreview);
 
-CMS.init({
-	config: {
-		local_backend: IS_DEV,
-		site_url: IS_DEV ? 'http://localhost:8000' : 'https://blog.andrewbrey.com',
-	},
-} as any);
+const config: any = {
+	site_url: IS_DEV ? 'http://localhost:9000' : 'https://blog.andrewbrey.com',
+};
+
+if (IS_DEV) {
+	config.local_backend = {
+		url: 'http://localhost:9081/api/v1',
+	};
+}
+
+CMS.init({ config } as any);
