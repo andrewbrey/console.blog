@@ -10493,10 +10493,10 @@ netlify-cms-locales@^1.12.0:
   resolved "https://registry.yarnpkg.com/netlify-cms-locales/-/netlify-cms-locales-1.12.0.tgz#c66e073401f351dd6ee1f5ae374798901dbcb901"
   integrity sha512-u/6nDpmtazeP6H3812JTG1QD1dTrx5g0LXZ6AkuIIB+hhfcQYa0kqti/8tjlOpiDuS/Cff+A4XtsMOqZAFXToQ==
 
-netlify-cms-proxy-server@^1.2.5:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/netlify-cms-proxy-server/-/netlify-cms-proxy-server-1.2.5.tgz#aa65af04bc7fe8ad09d30ef44e1d5739d9e37407"
-  integrity sha512-T4b/lGGP0LWnfU619UlSKOmoESTndDcjaxLlyyu485sSKl4J37iQCDg8HmsywrcxQ9sKTUeihaIjZiutvAf5CQ==
+netlify-cms-proxy-server@^1.2.6:
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/netlify-cms-proxy-server/-/netlify-cms-proxy-server-1.2.6.tgz#599a13b00be7943e72c48d6919d9bd2a7ec8e169"
+  integrity sha512-OsSNYRRdFR8LwsWRDUllzVU3GenId+byGKEvd5PCiV1u8uRamXAsCqY3YMagjuz7u0D77PdvAxYiSFRhMhIaHg==
   dependencies:
     "@hapi/joi" "^17.0.2"
     cors "^2.8.5"
