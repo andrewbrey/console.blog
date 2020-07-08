@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
 
+publish_mode: editorial_workflow
 # local_backend - will be set by manual bootstrap!
 # site_url - will be set by manual bootstrap!
 

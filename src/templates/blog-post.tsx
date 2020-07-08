@@ -2,21 +2,24 @@ import { graphql, Link } from 'gatsby';
 import React from 'react';
 import BlogMetadata from '../components/blog-metadata';
 import Layout from '../components/layout';
-import SEO from '../components/seo';
+import { Head } from '../components/layout/head';
 
 const BlogPostTemplate = ({ data, pageContext }) => {
 	const post = data.markdownRemark;
 
-	const { previous, next } = pageContext;
+	const { previous, next, slug } = pageContext;
 
 	const featuredImage = post.frontmatter.featuredImage;
 
 	return (
 		<Layout>
-			<SEO
+			<Head
 				title={post.frontmatter.title}
 				description={post.frontmatter.description || post.excerpt}
-				previewImage={featuredImage}
+				previewImage={featuredImage.childImageSharp.fixed.src}
+				isBlogPost={true}
+				slug={slug}
+				datePublished={post.frontmatter.date}
 			/>
 			<article className="max-w-screen-lg mx-auto">
 				<header className="flex flex-col justify-center items-start">
