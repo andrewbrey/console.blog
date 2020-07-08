@@ -16,7 +16,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
 			<Head
 				title={post.frontmatter.title}
 				description={post.frontmatter.description || post.excerpt}
-				previewImage={featuredImage.childImageSharp.fixed.src}
+				previewImage={featuredImage ? featuredImage.childImageSharp.fixed.src : ''}
 				isBlogPost={true}
 				slug={slug}
 				datePublished={post.frontmatter.date}
