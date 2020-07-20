@@ -9,7 +9,9 @@ published: true
 ---
 Recently for some client work I had to dig back into an [Ionic Framework](https://ionicframework.com/) mobile app code base which I had most recently edited over a year ago. In the intervening time since my last commits in that project I have seen the light of `utility` / `functional` / `atomic` CSS, thanks in no small part to [Adam Wathan](https://twitter.com/adamwathan) the creator of [TailwindCSS](https://tailwindcss.com/) and his [blog post from 2017](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/) where he talked about his evolution from so called *semantic CSS* to embracing utilities.
 
-> Another great discussion of the merits of utility CSS (and why you should be using it) can be found in [John Polacek's](https://twitter.com/johnpolacek) awesome presentation [Rethinking CSS](http://johnpolacek.com/rethinking/) 
+> Another great discussion of the merits of utility CSS (and why you should be using it) can be found in [John Polacek's](https://twitter.com/johnpolacek) awesome presentation [Rethinking CSS](http://johnpolacek.com/rethinking/).
+>
+>There is also a wonderful talk by Simon Vrachliotis from years ago called [A Real-Life Journey Into the Opinionated World of "Utility-First" CSS](https://vimeo.com/294976504) which also does an excellent job of showing the logical progression going from semantic css to utility css.
 
 As I was working I found myself over and over *wishing so badly* that the ergonomics of styling the prebuilt Ionic components could be as pleasant as the experience of working with Tailwind, and then inspiration struck! ***Why don't you just add Tailwind to the project dummy??***. I don't know why it took such rude comments from myself to make me think of simply adding Tailwind to make the styling experience nicer but hey, whatever it takes right?
 
