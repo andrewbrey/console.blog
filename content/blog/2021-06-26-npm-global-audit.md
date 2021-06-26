@@ -1,6 +1,6 @@
 ---
 title: NPM Global Audit
-description: Making it possible to run `npm audit` against globally installed node modules
+description: Making it possible to run npm audit against globally installed node modules
 date: 2021-06-26T21:36:15.642Z
 category: Projects
 featuredImage: ../assets/uploads/npm.png
