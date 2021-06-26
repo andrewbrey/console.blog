@@ -4,7 +4,7 @@ description: Making it possible to run npm audit against globally installed node
 date: 2021-06-26T21:36:15.642Z
 category: Projects
 featuredImage: ../assets/uploads/npm.png
-published: false
+published: true
 ---
 I've found that it's a good idea to keep as much of the software what I use every day up to date, and that includes the handful of node modules I have installed globally on my system - this is a pretty short list with "generally useful" things like [rimraf](https://www.npmjs.com/package/rimraf), [time-tracker](https://www.npmjs.com/package/time-tracker), [live-server](https://www.npmjs.com/package/live-server) (plus a few others). Towards the goal of keeping things up to date, I have made running [npm-check-updates](https://www.npmjs.com/package/npm-check-updates) against my various packages a habit, and this includes doing a daily update of all the modules I have installed globally. When you do an update against your globally installed modules, just as you get with a locally installed module, the `npm` cli will usually spit out some warnings about vulnerabilities in the packages you have installed and will then tell you to run `npm audit` to learn more...
 
