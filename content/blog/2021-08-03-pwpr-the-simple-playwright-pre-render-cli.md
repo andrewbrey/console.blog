@@ -5,7 +5,7 @@ description: The simplicity of making an HTTP request with cURL but with the
 date: 2021-08-03T22:07:16.151Z
 category: Projects
 featuredImage: ../assets/uploads/pwpr.png
-published: false
+published: true
 ---
 Recently, while working on automating the installation and setup of my computer I encountered an annoying situation. I was trying to script out the installation of Dropbox, and I didn't want to hard code in an installer version - for all other tools and applications that I "manually" install with scripts I've been able to obtain explicit version information programmatically. For some I could get version information via dedicated webpages (e.g. `golang` which provides its [current version here](https://golang.org/VERSION?m=text)). For others, which host their release assets on GitHub I could use the GitHub Releases API (e.g. the `starship` shell prompt, [which uses GitHub Releases](https://api.github.com/repos/starship/starship/releases/latest)). In fact, up until Dropbox, the only tool which made this even _a little_ difficult was the `aws-cli` which required that I parse their [CHANGELOG file](https://raw.githubusercontent.com/aws/aws-cli/v2/CHANGELOG.rst) to figure out the latest version.
 
