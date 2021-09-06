@@ -6,7 +6,7 @@ description: Flōt lets you place a website on top of other windows, but allows
 date: 2021-09-06T16:43:17.204Z
 category: Projects
 featuredImage: ../assets/uploads/flot.png
-published: false
+published: true
 ---
 If you've followed along with my blog post history or my projects [in GitHub](https://github.com/andrewbrey), you might already know that I tend to work best when I'm like...12% distracted by something - that's part of why I made [the Nix browser extension](https://chrome.google.com/webstore/detail/nix-the-simple-noise-mixe/okhnofjkdbkfhkfmlggbnghhfeimfdhm) (see the accompanying [blog post about it here](https://blog.andrewbrey.com/2021-02-06-nix-the-simple-noise-mixer/)), and it's why I recently took a liking to watching tv shows in a teeny-tiny little browser window in the corner of my screen while I work.
 
