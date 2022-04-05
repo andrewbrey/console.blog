@@ -5,6 +5,7 @@ description: A little experiment in how to build a developer resume website with
   fetched with cURL.
 date: 2022-04-05T23:13:34.649Z
 category: Tinker
+featuredImage: ../assets/uploads/remix-curl.png
 published: false
 ---
 // TODO
