@@ -23,7 +23,7 @@ You can visit this page in the browser and it will serve up a static `text/html`
 
 >  Of course, the code is fully open source and `MIT` licensed, so check that out on GitHub --> [andrewbrey/remix-curl](https://github.com/andrewbrey/remix-curl)
 
-As I expected this was honestly pretty trivial to put together and I think that really speaks to the senselessness of the abstractions that the Remix team has built. I spent more time getting `Vercel` to play nicely with my use of `patch-package` than I did actually building the site!
+As I expected this was honestly pretty trivial to put together and I think that really speaks to the seamlessness of the abstractions that the Remix team has built. I spent more time getting `Vercel` to play nicely with my use of `patch-package` than I did actually building the site!
 
 I could totally imagine building a fully fledged resume that renders beautifully in both the browser and in a terminal, and, while pretty dumb and mostly pointless, who knows what hiring decision some manager might make to hire you because you impress them with your silly `cURL-able` resume!
 
