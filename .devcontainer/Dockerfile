@@ -5,7 +5,7 @@ FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:0-${VARIANT}
 # ARGs defined _after_ FROM can be used in ENV declarations
 ARG BUILD_TZ=Etc/UTC
 
-ENV npm_config_yes="true" EDITOR="/bin/nano" VISUAL="/bin/nano" TZ=${BUILD_TZ}
+ENV npm_config_yes="true" EDITOR="/bin/nano" VISUAL="/bin/nano" TZ=${BUILD_TZ} GATSBY_TELEMETRY_DISABLED=1
 
 RUN chsh -s $(which zsh) root \
 	&& chsh -s $(which zsh) node
