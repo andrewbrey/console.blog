@@ -15,6 +15,12 @@
 		"meganrogge.template-string-converter",
 		"mikestead.dotenv",
 	],
+	"portsAttributes": {
+		"8000": {
+			"label": "Blog",
+			"onAutoForward": "openPreview"
+		}
+	},
 	"settings": {
 		"todo-tree.tree.autoRefresh": false,
 		"todo-tree.general.tags": ["TODO", "FIXME", "IDEA", "NOTE"],
