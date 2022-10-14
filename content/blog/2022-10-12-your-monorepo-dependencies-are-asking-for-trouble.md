@@ -1,13 +1,17 @@
 ---
 title: Your Monorepo Dependencies Are Asking for Trouble
-description: An exploration of a common dependency version issue in monorepo
-  projects, and the method I use to solve the issue in my own projects
+description:
+  An exploration of a common dependency version issue in monorepo projects, and the method I use to solve the issue in
+  my own projects
 date: 2022-10-12T18:55:15.963Z
 category: Exploration
 published: false
 ---
 
-When I wrote the title of this post, I had planned on saying "please forgive me for using such a click-bait title" but I've decided that, no, I actually do kinda think your (or, well the Royal "Your") dependency management _seriously might_ be asking for trouble.
+When I wrote the title of this post, I had planned on saying "please forgive me for using such a click-bait title" but
+I've decided that, no, I actually do kinda think your (or, well the Royal "Your") dependency management _just might_ be
+asking for trouble. The "issue" I want to discuss in this post definitely doesn't apply to every monorepo, and also,
+even if the issue _does_ apply to your monorepo, there's more than one way to solve it.
 
 ## Sad App Demo
 
