@@ -68,4 +68,4 @@ as a regular browser - instead I use it is a "read only" window for publicly acc
 credentials or any sensitive information into the sites I visit. For this purpose, it works quite well and it was very
 fun to build, so I think all-in-all it was worth the few days of diversion!
 
-Cheers!
+**Cheers!**

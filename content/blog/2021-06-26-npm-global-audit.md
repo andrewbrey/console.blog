@@ -38,4 +38,4 @@ from your terminal, and away it goes! There is more detail about how it works in
 free to have a poke about to learn more. Hopefully this will help someone out there who likes to stay aware of the
 outstanding issues present in their software, at least for javascript.
 
-Cheers!
+**Cheers!**

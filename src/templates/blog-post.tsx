@@ -21,17 +21,17 @@ const BlogPostTemplate = ({ data, pageContext }) => {
 				slug={slug}
 				datePublished={post.frontmatter.date}
 			/>
-			<article className="max-w-screen-lg mx-auto">
+			<article className="max-w-screen-xl mx-auto">
 				<header className="flex flex-col justify-center items-start">
 					<BlogMetadata
 						imgClasses="rounded-full border-2 border-smoke-200"
 						authorClasses="text-lg font-bold leading-none text-indigo-600 dark:text-fluencyy-400"
 					>
-						<small className="text-xs leading-none text-smoke-500">
+						<small className="text-xs lg:text-base leading-none text-smoke-500">
 							{post.frontmatter.date} &middot; {post.fields.readingTime.text}
 						</small>
 						<p
-							className="text-body text-indigo-600 dark:text-fluencyy-300 leading-snug"
+							className="text-body lg:text-lg text-indigo-600 dark:text-fluencyy-300 leading-snug"
 							dangerouslySetInnerHTML={{
 								__html: post.frontmatter.description || post.excerpt,
 							}}
@@ -43,7 +43,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
 				</header>
 				<hr className="mt-2 mb-16" />
 				<section
-					className="markdown text-lg md:text-base tracking-wide leading-relaxed md:leading-loose text-smoke-900 dark:text-smoke-200"
+					className="markdown text-lg lg:text-xl tracking-wide leading-relaxed md:leading-loose text-smoke-900 dark:text-smoke-200"
 					dangerouslySetInnerHTML={{ __html: post.html }}
 				/>
 			</article>
