@@ -1,0 +1,16 @@
+{
+	"spellchecker.documentTypes": ["markdown"],
+	"spellchecker.language": "en_US",
+	"spellchecker.checkInterval": 5000,
+	"spellchecker.ignoreWordsList": [
+		"blockquote",
+		"fluencyy",
+		"href",
+		"iframe",
+		"Monorepo",
+		"nofollow",
+		"noopener",
+		"StackBlitz",
+		"WebContainers"
+	]
+}

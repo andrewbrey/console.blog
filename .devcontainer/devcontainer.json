@@ -14,11 +14,12 @@
 		"jock.svg",
 		"meganrogge.template-string-converter",
 		"mikestead.dotenv",
+		"swyphcosmo.spellchecker"
 	],
 	"portsAttributes": {
 		"8000": {
 			"label": "Blog",
-			"onAutoForward": "openPreview"
+			"onAutoForward": "openBrowserOnce"
 		}
 	},
 	"settings": {
